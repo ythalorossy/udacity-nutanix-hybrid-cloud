@@ -1,0 +1,36 @@
+Dear CTO,
+
+As per your requirements for email I've create the following infrastructure:
+
+ - 3-tier application in both enviroment (development and production)  
+  - Microsoft SQL (windows)
+  - Application Server (linux)
+  - Web Server (linux)
+
+ - Network Configuration
+  - production
+   - VLAN 0, using the 172.31.0.0/24 network.
+   - IP Pool from 172.31.0.210 to 172.31.0.230
+  - Develpment
+   - VLAN 101, using the 172.31.101.0/24 network.
+
+ - Total of 6 VM using the following hardware configuration:
+  - cpu: 1 vCPU
+  - RAM: 4 GB
+  - VM Names:
+   - db-dev, app-dev, web-dev
+   - db-prod, app-prod, web-prod
+
+ - One Storage Container named Images to store the base image for the creation of the VM
+  - Windows and CentOS Images were stored in the Images Stora Container
+
+ - Data Protection creating one snapshot every 60 minutes. The process of restoration were tested.  
+
+Please let me know if there is something or missing on this configuration.
+
+Best Regards, 
+Ythalo Rossy S. Lira
+
+
+
+Lesson 3 - not formatted

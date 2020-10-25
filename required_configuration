@@ -1,0 +1,38 @@
+NTP
+pool.ntp.org
+
+Domain Naming Service (DNS)
+8.8.8.8
+
+3-tier application
+Microsoft SQL (windows)
+Application Server (linux)
+Web Server (linux)
+
+Network
+- production
+vlan 0, using the 172.31.0.0/24 network.
+IP Pool from 172.31.0.210 to 172.31.0.230
+- Develpment
+VLAN 101, using the 172.31.101.0/24 network.
+
+Hardware
+ - cpu: 1 vCPU
+ - RAM: 4 GB
+
+Storage Container (CS)
+ - Images
+
+Upload images from C:/Images to SC images
+
+VM Names:
+db-dev, app-dev, web-dev
+db-prod, app-prod, web-prod
+
+Create data protectio policy
+- prod-data-protection
+
+- Create production snapshot
+- Recover snapshot using the prefix Nutanix-Clone-
+
+
