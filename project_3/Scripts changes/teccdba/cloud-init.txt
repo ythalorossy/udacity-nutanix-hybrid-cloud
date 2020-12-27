@@ -1,0 +1,6 @@
+#cloud-config
+users:
+  - name: @@{teccdba.username}@@
+    ssh-authorized-keys:
+      - @@{teccdba.public_key}@@
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
